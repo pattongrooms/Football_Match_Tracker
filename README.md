@@ -4,7 +4,7 @@
 
 ### By: Patton Grooms
 
-#### [GitHub] (https://github.com/pattongrooms) | [LinkedIn] (https://www.linkedin.com/in/patton-grooms/)
+#### [GitHub](https://github.com/pattongrooms) | [LinkedIn](https://www.linkedin.com/in/patton-grooms/)
 
 ---
 
@@ -35,7 +35,7 @@
 
 ##### Football Match Tracker Wireframe
 
-![](https://app.diagrams.net/#G1hFYXzLQS8cewFtYvebYpA1Clt9C-pZ8q)
+![WireFrame](https://app.diagrams.net/#G1hFYXzLQS8cewFtYvebYpA1Clt9C-pZ8q)
 
 ---
 
