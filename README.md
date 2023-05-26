@@ -35,7 +35,7 @@
 
 ##### Football Match Tracker Wireframe
 
-![WireFrame](assets/images/Football Match Tracker Wireframe.png)
+![WireFrame](assets/images/Wireframe.png)
 
 ---
 
