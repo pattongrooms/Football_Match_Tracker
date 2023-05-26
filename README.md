@@ -1,6 +1,6 @@
 # Football Team Tracker
 
-## Date: 05/026/2023
+## Date: 05/26/2023
 
 ### By: Patton Grooms
 
@@ -23,9 +23,6 @@
 - HTML
 - CSS
 - Javascript
--
-
----
 
 ### **_Getting Started_**
 
@@ -39,7 +36,7 @@
 
 ##### Football Match Tracker Wireframe
 
-![WireFrame](assets/images/Wireframe.png)
+![WireFrame](Images/Wireframe.png)
 
 ---
 
