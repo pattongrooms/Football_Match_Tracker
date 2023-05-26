@@ -16,10 +16,14 @@
 
 ### **_Technologies Used_**
 
-- draw.io
-- VS Code
 - Github
-  -Trello
+- Trello
+- MongoDB
+- OAuth
+- HTML
+- CSS
+- Javascript
+-
 
 ---
 
