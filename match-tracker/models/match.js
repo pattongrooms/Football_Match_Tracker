@@ -1,13 +1,32 @@
-const matches = [
-  { id: 125223, match: 'VS Giants', Win: true },
-  { id: 127904, match: 'VS Bears', Win: false },
-  { id: 139608, match: 'VS 49ers', Win: true }
-]
+const mongoose = require('mongoose')
 
-module.exports = {
-  getAll
-}
+const Schema = mongoose.Schema
 
-function getAll() {
-  return matches
-}
+const matchSchema = new Schema({
+  teamName: {
+    type: String,
+    required: true
+  },
+  homeOrAway: {
+    type: Boolean,
+    default: true
+  },
+  location: {
+    type: String,
+    required: true
+  },
+  stadium: {
+    type: String,
+    required: true
+  },
+  record: {
+    type: Number,
+    required: true
+  },
+  result: {
+    type: String,
+    required: true
+  }
+})
+
+module.exports = mongoose.model('Match', matchSchema)
