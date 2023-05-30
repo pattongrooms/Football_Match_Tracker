@@ -5,16 +5,32 @@
 <br>
 
 <form id="match-form" action="/matches" method="POST">
-<label>Team Name:</label>
+
+<label>Team Name:
 <input type="text" name="teamName">
+</label>
+
 <br>
 <br>
-<label>Home or Away:</label>
-<!-- <input type="checkbox" name="homeOrAway" checked> -->
+
+<label>Home or Away:
 <select name="homeOrAway">
   <option value="Home">Home</option>
   <option value="Away">Away</option>
-
 </select>
+</label>
+
+<br>
+<br>
+
+<label>Game Location:
+<input type="text" name="location">
+</label>
+
+<br>
+<br>
+
+
+
 </form>
 <%- include('../partials/footer') %>
