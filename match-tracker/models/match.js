@@ -8,8 +8,8 @@ const matchSchema = new Schema({
     required: true
   },
   homeOrAway: {
-    type: Boolean,
-    default: true
+    type: String,
+    required: true
   },
   location: {
     type: String,
@@ -29,4 +29,5 @@ const matchSchema = new Schema({
   }
 })
 
+// compiling the schema into a model and export it
 module.exports = mongoose.model('Match', matchSchema)
