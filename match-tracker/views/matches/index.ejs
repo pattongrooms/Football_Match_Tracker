@@ -3,11 +3,11 @@
 <table>
   <thread>
     <tr>
-      <th>Team Name</th>
-      <th>Home or Away</th>
-      <th>Game Location</th>
+      <th>Team<br>Name</th>
+      <th>Home<br>or<br> Away</th>
+      <th>Game<br>Location</th>
       <th>Stadium</th>
-      <th>Opponent Record</th>
+      <th>Opponent<br>Record</th>
       <th>Result</th>
     </tr>
   </thread>
@@ -21,6 +21,7 @@
         <td><%= m.stadium %></td>
         <td><%= m.record %></td>
         <td><%= m.result %></td>
+        <td><a href="/matches/<%= m._id %>">Game Information</a></td>
       </tr>
     <% }) %>
   </tbody>

@@ -9,6 +9,9 @@ const matchesCtrl = require('../controllers/matches')
 // GET route for /matches/new
 router.get('/new', matchesCtrl.new)
 
+// GET /matches/:id (show functionality) MUST be below new route
+router.get('/:id', matchesCtrl.show)
+
 // POST route for /movies
 router.post('/', matchesCtrl.create)
 

@@ -21,7 +21,9 @@ const matchSchema = new Schema({
   },
   record: {
     type: Number,
-    required: true
+    required: true,
+    min: 0,
+    max: 25
   },
   result: {
     type: String,
