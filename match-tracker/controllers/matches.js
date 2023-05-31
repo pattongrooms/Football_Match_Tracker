@@ -12,15 +12,15 @@ function newMatch(req, res) {
 
 async function create(req, res) {
   try {
-    await Match.create(req.body)
-    res.redirect('/movies/new')
+    const Match = await Match.create(req.body)
+    res.redirect('/matches')
   } catch (err) {
     res.render('matches/new', { errorMsg: err.message })
   }
 }
 
-function index(req, res) {
+async function index(req, res) {
   res.render('matches/index', {
-    matches: Match.find()
+    matches: await Match.find()
   })
 }

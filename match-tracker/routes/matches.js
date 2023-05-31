@@ -14,6 +14,6 @@ router.post('/', matchesCtrl.create)
 
 // GET /matches
 // could be just '/'
-router.get('/index', matchesCtrl.index)
+router.get('/', matchesCtrl.index)
 
 module.exports = router
