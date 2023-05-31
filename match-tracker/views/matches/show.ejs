@@ -2,18 +2,37 @@
 
 
 <section id="show-page">
+  <br>
   <div>Team Name: </div>
   <div><%= match.teamName %></div>
+  <br>
   <div>Home or Away: </div>
   <div><%= match.homeOrAway %></div>
+  <br>
   <div>Game Location: </div>
   <div><%= match.location %></div>
+  <br>
   <div>Stadium: </div>
   <div><%= match.stadium %></div>
+  <br>
   <div>Opponent Record: </div>
   <div><%= match.record %></div>
+  <br>
   <div>Result: </div>
   <div><%= match.result %></div>
 </section>
+
+<br><br><h2>Game Log</h2>
+<form id="add-log-form" method="POST"
+  action="/matches/<%= match._id %>/log">
+  <label>Outcome:</label>
+  <textarea name="outcome"></textarea>
+  <label>MVP:</label>
+  <textarea name="mvp"></textarea>
+  <label>Notes:</label>
+  <textarea name="gameNote"></textarea>
+  
+  <input type="submit" value="Add Review">
+</form>
 
 <%- include('../partials/footer') %>

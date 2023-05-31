@@ -34,7 +34,8 @@ const matchSchema = new Schema({
   result: {
     type: String,
     required: true
-  }
+  },
+  gameInfo: [gameInfoSchema]
 })
 
 // compiling the schema into a model and export it
