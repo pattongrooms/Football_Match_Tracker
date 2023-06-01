@@ -57,6 +57,14 @@
           <td><%= m.defense %></td>
           <td><%= m.mvp %></td>
           <td><%= m.gameNote %></td>
+          <td>
+            <% if (user?._id.equals(m.user)) { %>
+              <form action="/gameInfos/<%= m._id %>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+              </form>
+
+          <%  } %>
+          </td>
         </tr>
       <% }) %>
       </tbody>

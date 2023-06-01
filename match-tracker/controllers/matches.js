@@ -15,6 +15,7 @@ async function index(req, res) {
 
 async function show(req, res) {
   const match = await Match.findById(req.params.id)
+  console.log('THESE ARE THE NOTES FOR THIS MATCH', match.gameInfos)
   res.render('matches/show', { title: 'Game Information', match })
 }
 
