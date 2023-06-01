@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const gameInfoSchema = new Schema({
-  outcome: { type: String, required: true },
+  offense: { type: String, required: true },
+  defense: { type: String, required: true },
   mvp: { type: String, required: true },
   gameNote: { type: String, required: true }
 })
