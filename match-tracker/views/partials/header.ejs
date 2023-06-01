@@ -17,10 +17,13 @@
 
 
   
-    <a href="/">Team Home Page</a>
+    <a href="/">TEAM HOME PAGE</a>
     <% if (user) { %>
     
+      <a href="/matches">TEAM INFORMATION PAGE</a>
+      |
       <a href="/matches/new">ADD GAME</a>
+      |
       <a href="/logout">LOG OUT</a>
     <% } else { %>
       <a href="/auth/google" class="login">LOG IN&nbsp;</a>

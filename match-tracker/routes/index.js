@@ -4,7 +4,7 @@ const passport = require('passport')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Views Index/Team Home Page' })
+  res.render('index', { title: 'Coach Tool' })
 })
 
 // Google OAuth login route

@@ -1,10 +1,10 @@
 const Match = require('../models/match')
 
 module.exports = {
+  index,
   show,
   new: newMatch,
-  create,
-  index
+  create
 }
 
 async function index(req, res) {
@@ -24,7 +24,7 @@ function newMatch(req, res) {
 
 async function create(req, res) {
   try {
-    const Match = await Match.create(req.body)
+    const match = await Match.create(req.body)
     res.redirect('/matches')
   } catch (err) {
     res.render('matches/new', { errorMsg: err.message })
