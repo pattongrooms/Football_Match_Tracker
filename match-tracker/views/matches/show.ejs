@@ -25,7 +25,9 @@
 <br><br><h2>Game Log</h2>
 <form id="add-log-form" method="POST"
   action="/matches/<%= match._id %>/log">
-  <label>Outcome:</label>
+  <label>Offense:</label>
+  <textarea name="outcome"></textarea><br>
+  <label>Defense:</label>
   <textarea name="outcome"></textarea><br>
   <label>MVP:</label>
   <textarea name="mvp"></textarea><br>

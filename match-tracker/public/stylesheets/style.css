@@ -19,7 +19,7 @@ body {
 
 body > nav {
   grid-area: nav;
-  background-color: #B8C0C2;
+  background-color: black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -27,7 +27,7 @@ body > nav {
 }
 
 a {
-  color: #00B7FF;
+  color: silver;
 }
 
 /* keep at bottom of page  */
