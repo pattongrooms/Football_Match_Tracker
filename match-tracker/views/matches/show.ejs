@@ -26,13 +26,13 @@
 <form id="add-log-form" method="POST"
   action="/matches/<%= match._id %>/log">
   <label>Outcome:</label>
-  <textarea name="outcome"></textarea>
+  <textarea name="outcome"></textarea><br>
   <label>MVP:</label>
-  <textarea name="mvp"></textarea>
+  <textarea name="mvp"></textarea><br>
   <label>Notes:</label>
-  <textarea name="gameNote"></textarea>
+  <textarea name="gameNote"></textarea><br>
   
-  <input type="submit" value="Add Review">
+  <input type="submit" value="Add Game Note">
 </form>
 
 <%- include('../partials/footer') %>
