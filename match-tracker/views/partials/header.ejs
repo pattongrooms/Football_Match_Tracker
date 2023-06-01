@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matches Index Page</title>
+  <title>Partials Header</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
   
   <nav>
-  <a href="/">Team Home Page</a> |   <a href="/matches">Schedule</a> | <a href="/matches/new">Add Game to Schedule</a> 
+  <!-- <a href="/">Team Home Page</a> |  
+  <a href="/matches">Schedule</a> |
+  <a href="/matches/new">Add Game to Schedule</a>  -->
   <!-- this last a tag may need to be just matches -->
-  </nav>
 
+
+  
+    <a href="/">Team Home Page</a>
+    <% if (user) { %>
+    
+      <a href="/matches/new">ADD GAME</a>
+      <a href="/logout">LOG OUT</a>
+    <% } else { %>
+      <a href="/auth/google" class="login">LOG IN&nbsp;</a>
+    <% } %>
+  </nav>
   
   
   
