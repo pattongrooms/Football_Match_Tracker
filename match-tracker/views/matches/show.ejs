@@ -23,12 +23,13 @@
 </section>
 
 <br><br><h2>Game Log</h2>
+<% if (user) { %>
 <form id="add-log-form" method="POST"
-  action="/matches/<%= match._id %>/log">
+  action="/matches/<%= match._id %>/gameinfos">
   <label>Offense:</label>
-  <textarea name="outcome"></textarea><br>
+  <textarea name="offense"></textarea><br>
   <label>Defense:</label>
-  <textarea name="outcome"></textarea><br>
+  <textarea name="defense"></textarea><br>
   <label>MVP:</label>
   <textarea name="mvp"></textarea><br>
   <label>Notes:</label>
@@ -36,5 +37,33 @@
   
   <input type="submit" value="Add Game Note">
 </form>
+<% } %>
+<% if (match.gameInfos.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>Offense</th>
+        <th>Defense</th>
+        <th>MVP</th>
+        <th>Notes</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+
+      <% match.gameInfos.forEach(function(m) { %>
+        <tr>
+          <td><%= m.offense %></td>
+          <td><%= m.defense %></td>
+          <td><%= m.mvp %></td>
+          <td><%= m.gameNote %></td>
+        </tr>
+      <% }) %>
+      </tbody>
+    </table>
+<% } else { %>
+  <h5>No Comments Yet</h5>
+
+<% } %>
 
 <%- include('../partials/footer') %>

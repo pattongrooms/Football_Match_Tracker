@@ -8,4 +8,7 @@ const ensureLoggedIn = require('../config/ensureLoggedIn')
 // POST /matches/:id/gameinfos
 router.post('/matches/:id/gameinfos', ensureLoggedIn, gameInfosCtrl.create)
 
+// DELETE /gameinfos/:id
+router.delete('/gameinfos/:id', ensureLoggedIn, gameInfosCtrl.delete)
+
 module.exports = router

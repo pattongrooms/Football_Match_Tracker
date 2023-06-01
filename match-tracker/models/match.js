@@ -6,7 +6,14 @@ const gameInfoSchema = new Schema({
   offense: { type: String, required: true },
   defense: { type: String, required: true },
   mvp: { type: String, required: true },
-  gameNote: { type: String, required: true }
+  gameNote: { type: String, required: true },
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  userName: String,
+  userAvatar: String
 })
 
 const matchSchema = new Schema({
@@ -36,7 +43,7 @@ const matchSchema = new Schema({
     type: String,
     required: true
   },
-  gameInfo: [gameInfoSchema]
+  gameInfos: [gameInfoSchema]
 })
 
 // compiling the schema into a model and export it
