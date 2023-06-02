@@ -22,6 +22,8 @@ async function create(req, res) {
   res.redirect(`/matches/${match._id}`)
 }
 
+// credit vidi and glenn
+
 async function deleteComment(req, res, next) {
   const matches = await Match.find({})
 
