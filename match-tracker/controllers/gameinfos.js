@@ -11,7 +11,7 @@ async function create(req, res) {
   req.body.userName = req.user.name
   req.body.userAvatar = req.user.avatar
   // pushing or unshift subdocs into mongoose arrays
-  console.log(req.body)
+
   match.gameInfos.push(req.body)
   try {
     // save changes made to match doc
