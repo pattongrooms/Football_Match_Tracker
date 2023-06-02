@@ -14,6 +14,10 @@
 
 ---
 
+### Future Updates
+
+#### In the future, a coach will be able to add their own team name, add players to their roster, update their injury list, and delete games from the schedule.
+
 ### **_Technologies Used_**
 
 - Node Express
@@ -41,8 +45,6 @@
 
 ### **_Credits_**
 
-##### Background Images: [Teams]
-
 ##### https://hub.generalassemb.ly/learn/course/full-stack-development-us-online-ec-24-april-2023-19-july-2023/mongodb-mongoosejs-odm/mongodb-mongoose?client=courses&page=3
 
 ##### https://www.w3schools.com/html/html_form_input_types.asp
@@ -50,7 +52,5 @@
 ##### https://www.w3schools.com/css/css_align.asp
 
 ##### https://hub.generalassemb.ly/learn/course/full-stack-development-us-online-ec-24-april-2023-19-july-2023/mongodb-mongoosejs-odm/mongodb-mongoose?client=courses&page=5
-
-#####
 
 ---
