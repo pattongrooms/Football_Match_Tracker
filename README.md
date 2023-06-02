@@ -10,19 +10,18 @@
 
 ### Description
 
-#### This is a football match tracker that is user friendly. The user will have access to a football team database they can use to edit match locations, dates, scores, etc.
+#### This is a coach's app to fill a coach's needs. The user will be able to create their season schedule and add game notes to each specific game. They can use to edit match locations, dates, scores, etc.
 
 ---
 
 ### **_Technologies Used_**
 
-- Github
-- Trello
+- Node Express
 - MongoDB
+- Mongoose
 - OAuth
-- HTML
-- CSS
 - Javascript
+- EJS
 
 ### **_Getting Started_**
 
@@ -36,12 +35,22 @@
 
 ##### Football Match Tracker Wireframe
 
-![WireFrame](Images/Wireframe.png)
+![WireFrame](match-tracker/public/images/Wireframe.png)
 
 ---
 
 ### **_Credits_**
 
 ##### Background Images: [Teams]
+
+##### https://hub.generalassemb.ly/learn/course/full-stack-development-us-online-ec-24-april-2023-19-july-2023/mongodb-mongoosejs-odm/mongodb-mongoose?client=courses&page=3
+
+##### https://www.w3schools.com/html/html_form_input_types.asp
+
+##### https://www.w3schools.com/css/css_align.asp
+
+##### https://hub.generalassemb.ly/learn/course/full-stack-development-us-online-ec-24-april-2023-19-july-2023/mongodb-mongoosejs-odm/mongodb-mongoose?client=courses&page=5
+
+#####
 
 ---
