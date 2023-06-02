@@ -34,10 +34,8 @@ const matchSchema = new Schema({
     required: true
   },
   record: {
-    type: Number,
-    required: true,
-    min: 0,
-    max: 25
+    type: String,
+    required: true
   },
   result: {
     type: String,

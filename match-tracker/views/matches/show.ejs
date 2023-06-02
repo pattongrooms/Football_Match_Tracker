@@ -20,6 +20,7 @@
   <br>
   <div>Result: </div>
   <div><%= match.result %></div>
+  
 </section>
 
 <br><br><h2>Game Log</h2>
@@ -50,7 +51,7 @@
       </tr>
     </thead>
     <tbody>
-
+      <div class="deleteinfo2">
       <% match.gameInfos.forEach(function(m) { %>
         <tr>
           <td><%= m.offense %></td>
@@ -59,9 +60,10 @@
           <td><%= m.gameNote %></td>
           <td>
             <% if (user?._id.equals(m.user)) { %>
-              <form action="/gameInfos/<%= m._id %>?_method=DELETE" method="POST">
-                <button type="submit">X</button>
-              </form>
+              <form class="deleteinfo" action="/gameInfos/<%= m._id %>?_method=DELETE" method="POST">
+                <button type="submit">Delete Game Note</button>
+            </div>
+          </form>
 
           <%  } %>
           </td>
