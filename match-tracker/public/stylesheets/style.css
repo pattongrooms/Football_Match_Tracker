@@ -1,4 +1,4 @@
-/* global styling */
+/* global style */
 
 body {
   text-align: center;
@@ -7,3 +7,26 @@ body {
   text-align: center;
  }
 
+/* header style */
+
+nav {
+  background-color: black;
+}
+
+nav a {
+  color: silver;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+nav a:hover {
+  background-color: silver;
+  color: black;
+}
+
+/* footer style */
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
