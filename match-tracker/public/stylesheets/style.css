@@ -1,39 +1,9 @@
-/* * {
-  box-sizing: border-box;
-  font-family: Helvetica;
-  color: #424748;
-}
+/* global styling */
 
 body {
-  margin: auto;
-  padding: 10px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: seashell;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 20px 1fr;
-  grid-template-areas:
-  "nav"
-
+  text-align: center;
 }
+ h1, h2, h5 {
+  text-align: center;
+ }
 
-body > nav {
-  grid-area: nav;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px 0 30px;
-}
-
-a {
-  color: silver;
-}
-
-/* keep at bottom of page  */
-
-/* #add-log-form input[type="submit"] {
-  width: 8rem;
-  grid-column: 2 / 3;
-  margin-bottom: 2rem;
-}  */
